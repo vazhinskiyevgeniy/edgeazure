@@ -328,6 +328,8 @@ Let's now test the kiosk we deployed. To do that create a VM next to your App St
 
 Here is an example of the networking section that you would encounter when creating a new VM.
 
+.. figure:: ./assets/test-kiosk_0_0.png
+
 .. figure:: ./assets/test-kiosk_0_1.png
 
 Find the Private IP of your AppStack VM in Azure. Usually it's 10.125.10.5
