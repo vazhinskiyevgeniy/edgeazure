@@ -190,6 +190,56 @@ Let's now run the command to see the number of Kubernetes pods deployed to run t
     
 As we can see from the output, there's a **master-node-1** node in our Kubernetes having the 'Ready' status. 
 
+------------------------------------------------------------
+Сreate Azure CE Site
+------------------------------------------------------------
+
+Let's now take the last pre-requisite step - creating an Azure CE Site. Navigate to the **Site Management** section and select **Azure VNET Sites**. Click the **Add Azure VNET Site** button. 
+
+.. figure:: ./assets/ce-site-azure_1.png
+
+Enter a name and proceed to the labels. Type in **location** for the custom key and **buytime-ce-site** for its value.
+
+.. figure:: ./assets/ce-site-azure_2.png
+
+Next, we will configure site type. First, select a region from the **AWS Region** drop-down menu. We'll use **ca-central-1** for this demo. 
+With the **New VPC Parameters** selected by default, go on to create a new VPC. Select **Autogenerate VPC Name** and enter the **172.24.0.0/16** CIDR in the IPv4 CIDR block field.
+From the **Select Ingress Gateway or Ingress/Egress Gateway** menu, select the **Ingress/Egress Gateway (Two Interface)** option which is useful when the site is used as ingress/egress gateway to the VPC. Click **Configure** to open the two-interface node configuration.
+
+.. figure:: ./assets/ce-site-azure_3.png
+
+Click **Add Item** to add a node.
+
+.. figure:: ./assets/ce-site-azure_4.png
+
+Select the **ca-central-1a** AWS availability zone. Please note that it must be consistent with the AWS Region selected earlier. 
+For the **New Subnet** selected by default, enter the **172.24.30.0/24** subnet in the IPv4 Subnet field.
+Then go on to configure **Subnet for Outside Interface** by entering the **172.24.20.0/24** subnet in the IPv4 Subnet field.
+And finally, in the **Subnet for Inside Interface** menu, select **Specify Subnet** to create a new one. Fill in the **172.24.10.0/24** subnet in the IPv4 Subnet field. Complete configuring the node by clicking the **Apply** button. 
+
+.. figure:: ./assets/ce-site-azure_5.png
+
+Take a look at the node configuration and click the **Apply** button to proceed.
+
+.. figure:: ./assets/ce-site-azure_6.png
+
+Back on the AWS VPC Site configuration page, navigate to the **Site Type Selection** section and select the **system/aws-creds** for automatic deployment.
+
+.. figure:: ./assets/ce-site-azure_7.png
+
+Next, we will paste the Public SSH key to access the site. Note that if you don't have a key, you can generate one using the "ssh-keygen" command and then display it with the command "cat ~/.ssh/id_rsa.pub".
+
+.. figure:: ./assets/ce-ssh_key.png
+
+Finally, take one more look at the configuration and complete it by clicking the **Save and Exit** button.
+
+.. figure:: ./assets/ce-site-azure_8.png
+
+The Status box for the VPC site object will display **Generated**. Click **Apply**. The Status field for the AWS VPC object changes to **Apply Planning**. Wait for the apply process to complete and the status to change to **Applied**.
+
+.. figure:: ./assets/ce-site-azure_9.png
+
+
 MODULE 1
 ################################
 
