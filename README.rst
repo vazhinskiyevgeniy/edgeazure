@@ -137,7 +137,7 @@ In the **Advanced Options** section, enable **Site Local K8s API access** and se
 
 .. figure:: ./assets/azure-appstack-create_8.png
 
-Back on the Azure VNET Site configuration page, navigate to the **Site Type Selection** section and select the **system/azure-creds** for automatic deployment. 
+Back on the Azure VNET Site configuration page, navigate to the **Cloud Credentials** and select the **system/azure-creds** for automatic deployment. 
 
 .. figure:: ./assets/azure-appstack-create_9.png
 
@@ -202,8 +202,9 @@ Enter a name and proceed to the labels. Type in **location** for the custom key 
 
 .. figure:: ./assets/ce-site-azure_2.png
 
-Next, we will configure site type. First, select a region from the **AWS Region** drop-down menu. We'll use **ca-central-1** for this demo. 
-With the **New VPC Parameters** selected by default, go on to create a new VPC. Select **Autogenerate VPC Name** and enter the **172.24.0.0/16** CIDR in the IPv4 CIDR block field.
+Next, we will configure site type. First, enter your Azure resource group **azure-ce-branch-a** for resources that will be created. Ensure that you enter a name for a non-existent resource group. With the **Recommended Azure Region Name** option selected by default, go on and select **centralus** for this demo. 
+From the **Vnet** menu, select **New Vnet Parameters** and then **Autogenerate Vnet Name**. 
+After that, enter the **172.24.0.0/16** CIDR in the IPv4 CIDR block field.
 From the **Select Ingress Gateway or Ingress/Egress Gateway** menu, select the **Ingress/Egress Gateway (Two Interface)** option which is useful when the site is used as ingress/egress gateway to the VPC. Click **Configure** to open the two-interface node configuration.
 
 .. figure:: ./assets/ce-site-azure_3.png
@@ -212,10 +213,9 @@ Click **Add Item** to add a node.
 
 .. figure:: ./assets/ce-site-azure_4.png
 
-Select the **ca-central-1a** AWS availability zone. Please note that it must be consistent with the AWS Region selected earlier. 
-For the **New Subnet** selected by default, enter the **172.24.30.0/24** subnet in the IPv4 Subnet field.
-Then go on to configure **Subnet for Outside Interface** by entering the **172.24.20.0/24** subnet in the IPv4 Subnet field.
-And finally, in the **Subnet for Inside Interface** menu, select **Specify Subnet** to create a new one. Fill in the **172.24.10.0/24** subnet in the IPv4 Subnet field. Complete configuring the node by clicking the **Apply** button. 
+From the **Azure AZ name** menu, select **1** to set the number of availability zones.
+Then go on to configure **Subnet for Inside Interface** by entering the **172.24.10.0/24** subnet in the IPv4 Subnet field.
+And finally, in the **Subnet for Outside Interface** menu fill in the **172.24.20.0/24** subnet in the IPv4 Subnet field. Complete configuring the node by clicking the **Apply** button. 
 
 .. figure:: ./assets/ce-site-azure_5.png
 
@@ -223,7 +223,7 @@ Take a look at the node configuration and click the **Apply** button to proceed.
 
 .. figure:: ./assets/ce-site-azure_6.png
 
-Back on the AWS VPC Site configuration page, navigate to the **Site Type Selection** section and select the **system/aws-creds** for automatic deployment.
+Back on the Azure VNET Site configuration page, navigate to the **Cloud Credentials** and select the **system/azure-creds** for automatic deployment. 
 
 .. figure:: ./assets/ce-site-azure_7.png
 
