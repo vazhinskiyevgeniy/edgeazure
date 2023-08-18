@@ -229,7 +229,7 @@ Back on the AWS VPC Site configuration page, navigate to the **Site Type Selecti
 
 Next, we will paste the Public SSH key to access the site. Note that if you don't have a key, you can generate one using the "ssh-keygen" command and then display it with the command "cat ~/.ssh/id_rsa.pub".
 
-.. figure:: ./assets/ce-ssh_key.png
+.. figure:: ./assets/ce-ssh-key.png
 
 Finally, take one more look at the configuration and complete it by clicking the **Save and Exit** button.
 
