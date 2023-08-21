@@ -376,9 +376,11 @@ Let's now test the kiosk we deployed. To do that create a VM next to your App St
 
 .. figure:: ./assets/test-kiosk_0.png
 
-Here is an example of the networking section that you would encounter when creating a new VM.
+Here is an example of the networking section that you would encounter when creating a new VM. Make sure to select instance region. In this demo we will use **(US) Central US**.
 
 .. figure:: ./assets/test-kiosk_0_0.png
+
+Select the subnet.
 
 .. figure:: ./assets/test-kiosk_0_1.png
 
