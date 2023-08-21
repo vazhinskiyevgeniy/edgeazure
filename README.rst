@@ -205,7 +205,7 @@ Enter a name and proceed to the labels. Type in **location** for the custom key 
 Next, we will configure site type. First, enter your Azure resource group **azure-ce-branch-a** for resources that will be created. Ensure that you enter a name for a non-existent resource group. With the **Recommended Azure Region Name** option selected by default, go on and select **centralus** for this demo. 
 From the **Vnet** menu, select **New Vnet Parameters** and then **Autogenerate Vnet Name**. 
 After that, enter the **172.24.0.0/16** CIDR in the IPv4 CIDR block field.
-From the **Select Ingress Gateway or Ingress/Egress Gateway** menu, select the **Ingress/Egress Gateway (Two Interface)** option which is useful when the site is used as ingress/egress gateway to the VPC. Click **Configure** to open the two-interface node configuration.
+From the **Select Ingress Gateway or Ingress/Egress Gateway** menu, select the **Ingress Gateway (One Interface) on Recommended Region** option which is useful when the site is used as ingress/egress gateway to the VPC. Click **Configure** to open the two-interface node configuration.
 
 .. figure:: ./assets/ce-site-azure_3.png
 
