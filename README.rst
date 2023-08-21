@@ -157,7 +157,7 @@ After that, take one more look at the configuration and complete it by clicking 
 
 .. figure:: ./assets/saveandexit.png
 
-The Status box for the VNet object will display **Generated**. Click **Apply** in the Actions column. The Status field for your Azure VNet object changes to Applying.
+The Status box for the VNet object will display **Generated**. Click **Apply** in the Actions column. The Status field for your Azure VNET object changes to Applying.
 
 .. figure:: ./assets/azure-appstack-create_11.png
 
