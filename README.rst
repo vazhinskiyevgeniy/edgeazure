@@ -235,7 +235,7 @@ Finally, take one more look at the configuration and complete it by clicking the
 
 .. figure:: ./assets/ce-site-azure_8.png
 
-The Status box for the VPC site object will display **Generated**. Click **Apply**. The Status field for the AWS VPC object changes to **Apply Planning**. Wait for the apply process to complete and the status to change to **Applied**.
+The Status box for the VPC site object will display **Generated**. Click **Apply**. The Status field for the Azure VNET object changes to **Apply Planning**. Wait for the apply process to complete and the status to change to **Applied**.
 
 .. figure:: ./assets/ce-site-azure_9.png
 
