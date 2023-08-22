@@ -1,13 +1,13 @@
 
 ====================================
-Edge Compute for Multicloud Apps
+Edge Compute for Multicloud Apps using Azure Site
 ====================================
 
 .. contents:: Table of Contents
 
 Objective
 ################################
-This guide, along with the provided scripts and sample app & services, is designed to help explore and demonstrate the use-cases of the F5 Distributed Cloud platform (xC), including F5 Distributed Cloud AppStack, Multi-Cloud Networking (MCN) and Edge Compute.
+This guide, along with the provided scripts and sample app & services, is designed to help explore and demonstrate the use-cases of the F5 Distributed Cloud platform (xC), including F5 Distributed Cloud AppStack, Multi-Cloud Networking (MCN) and Edge Compute configured using Azure VNET site.
 
 You can use the included scripts to deploy the WooCommerce sample app, which represents a traditional 3-tier app architecture (backend + database + frontend). With F5 Distributed Cloud Services, you can easily deploy and securely network these app services to create a distributed app model that spans across: 
 
