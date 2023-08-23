@@ -1,6 +1,6 @@
 
 ====================================
-Edge Compute for Multicloud Apps using Azure Site
+Edge Compute for Multicloud Apps Using Azure VNET Site
 ====================================
 
 .. contents:: Table of Contents
